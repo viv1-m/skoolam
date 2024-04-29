@@ -1,0 +1,17 @@
+[
+    {
+    "imagePath": "/donateMonthly.png",
+    "title": "DONATE MONTHLY",
+    "description": "Every Flame Starts with a Spark,Even a small donation of about Rs. 2000 per month can provide nutritious meals and quality education to a child in India. "
+    },
+    {
+    "imagePath": "/donateBooks.png",
+    "title": "DONATE \r\nBOOKS",
+    "description": "By donating just 2350 rupees, you can provide stationary for one kid for a year. A child needs at least 10 books, 35 copies, and approximately 48 pens and pencils."
+    },
+    {
+    "imagePath": "showYourTalent.png",
+    "title": "SHOW YOUR TALENT",
+    "description": "Be a part of the change by showcasing your talents at our nearest center and inspire others. "
+    }
+]
