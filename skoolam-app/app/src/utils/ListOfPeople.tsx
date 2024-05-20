@@ -11,8 +11,21 @@ const PeopleList: React.FC<PeopleListProps> = ({ listType, title }) => {
   // Assuming you have an array of people data
   const people = peopleList[listType];
   return (
-    <div style={{ padding: "5%", paddingRight: "10%", paddingLeft: "10%" }}>
-      <div style={{ color: "#680118", fontWeight: "bolder", fontSize: 43 }}>
+    <div
+      style={{
+        paddingRight: "10%",
+        paddingLeft: "10%",
+        paddingBottom: "2%",
+        marginLeft: 32,
+      }}
+    >
+      <div
+        style={{
+          color: "#680118",
+          fontWeight: "bolder",
+          fontSize: 43,
+        }}
+      >
         {title}
       </div>
       <div

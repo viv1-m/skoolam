@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
+import Link from "next/link";
 
 const useStyles = makeStyles({
   root: {
@@ -38,40 +39,48 @@ interface DonationCardProps {
   imagePath: string;
   title: string;
   description: string;
+  amount: number;
 }
 
 const DonationCard: React.FC<DonationCardProps> = ({
   imagePath,
   title,
   description,
+  amount,
 }) => {
   const classes = useStyles();
 
   return (
     <Box boxShadow={3} className={classes.root}>
-      <Card style={{ height: "100%" }}>
-        <CardMedia className={classes.media} image={imagePath} title={title} />
-        <CardContent style={{ padding: 16 }}>
-          <div
-            style={{
-              fontSize: 32,
-              fontWeight: "bolder",
-              color: "#680118",
-              lineHeight: 0.9,
-            }}
-          >
-            {title}
-          </div>
-          <Typography
-            variant="body2"
-            color="textPrimary"
-            component="p"
-            style={{ fontWeight: "bold", paddingTop: 16 }}
-          >
-            {description}
-          </Typography>
-        </CardContent>
-      </Card>
+      <Link href={`/payment?amount=${amount}`}>
+        <Card style={{ height: "100%" }}>
+          <CardMedia
+            className={classes.media}
+            image={imagePath}
+            title={title}
+          />
+          <CardContent style={{ padding: 16 }}>
+            <div
+              style={{
+                fontSize: 32,
+                fontWeight: "bolder",
+                color: "#680118",
+                lineHeight: 0.9,
+              }}
+            >
+              {title}
+            </div>
+            <Typography
+              variant="body2"
+              color="textPrimary"
+              component="p"
+              style={{ fontWeight: "bold", paddingTop: 16 }}
+            >
+              {description}
+            </Typography>
+          </CardContent>
+        </Card>
+      </Link>
     </Box>
   );
 };

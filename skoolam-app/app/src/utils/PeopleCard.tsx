@@ -31,18 +31,19 @@ const PeopleCard: React.FC<PeopleCardProps> = ({
       >
         {name}
       </div>
-      <p
-        style={{
-          fontWeight: "regular",
-          fontSize: 20,
-          paddingTop: 8,
-          maxWidth: 330,
-          wordWrap: "break-word", // This will break the word at the end of the line
-          overflowWrap: "break-word",
-        }}
-      >
-        {description}
-      </p>
+      <>
+        <p
+          style={{
+            fontWeight: "regular",
+            fontSize: 20,
+            paddingTop: 8,
+            maxWidth: 330,
+            whiteSpace: "wrap",
+          }}
+        >
+          {description}
+        </p>
+      </>
     </div>
   );
 };

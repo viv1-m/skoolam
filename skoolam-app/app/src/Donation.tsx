@@ -19,6 +19,7 @@ const Donation: React.FC = () => {
               imagePath={item.imagePath}
               title={item.title}
               description={item.description}
+              amount={item.amount}
             />
           ))}
         </div>

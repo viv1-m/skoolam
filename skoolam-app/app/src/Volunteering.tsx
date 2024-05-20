@@ -22,12 +22,14 @@ const Volunteering = () => {
       >
         <div
           style={{
-            textAlign: "end",
+            textAlign: "start",
             position: "absolute",
             top: "0",
             right: "0",
             color: "white",
-            fontSize: "18px",
+            fontSize: "58px",
+            maxWidth: "30%",
+            padding: "20px 40px 0 0",
           }}
         >
           What is volunteering?
