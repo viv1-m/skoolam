@@ -6,14 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prod": "next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.1",
+    "@material-ui/core": "^4.12.4",
     "next": "14.2.2",
+    "razorpay": "^2.9.4",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
-    "react-responsive-carousel": "^3.2.23"
+    "react-icons": "^5.1.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/node": "^20",

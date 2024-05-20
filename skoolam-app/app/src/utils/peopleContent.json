@@ -1,0 +1,26 @@
+{
+    "advisoryCommittee": [
+        {
+            "imagePath": "/people/PradeepAgarwal.png",
+            "name": "Pradeep Agarwal",
+            "description": "Principal & Ex-Senior Math's Faculty at Allen Career Institute."
+        },
+        {
+            "imagePath": "/people/VivekMaheshwari.png",
+            "name": "Vivek Maheshwari",
+            "description": "Full Stack Developer at Microsoft, Hyderabad"
+        }
+    ],
+    "boardOfTrustees": [
+        {
+            "imagePath": "/people/MalvikaAgarwal.png",
+            "name": "Malvika Agarwal",
+            "description": "Managing Member & Trustee At Skoolam"
+        },
+        {
+            "imagePath": "/people/PriyankaAgarwal.png",
+            "name": "Priyanka Agarwal",
+            "description": "Founder & Trustee At Skoolam"
+        }
+    ]
+}
