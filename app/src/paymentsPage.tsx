@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from "react";
+import React, { Suspense } from "react";
 import "./paymentsPage.style.css";
 import PaymentDetails from "./utils/paymentDetails";
 
@@ -26,7 +26,9 @@ const PaymentPage: React.FC = () => {
           <img src="paymentImage.png" alt="Children" />
         </div>
         <div style={{ maxWidth: "75%", minWidth: "70%" }}>
-          <PaymentDetails />
+          <Suspense>
+            <PaymentDetails />
+          </Suspense>
         </div>
       </div>
       <div className="quote">
