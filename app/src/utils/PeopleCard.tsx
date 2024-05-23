@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface PeopleCardProps {
   imagePath: string;
@@ -20,7 +19,7 @@ const PeopleCard: React.FC<PeopleCardProps> = ({
         width: 330,
       }}
     >
-      <Image src={imagePath} alt={name} width={330} height={330} />
+      <img src={imagePath} alt={name} width={330} height={330} />
       <div
         style={{
           fontWeight: "bolder",

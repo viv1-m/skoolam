@@ -1,14 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const TopBanner: React.FC = () => {
-  // const history = useHistory();
-
-  // const handleDonateClick = () => {
-  //   history.push("/payment");
-  // };
-
   return (
     <div
       style={{
@@ -19,12 +12,7 @@ const TopBanner: React.FC = () => {
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <div style={{ alignContent: "center" }}>
           <Link href="/">
-            <Image
-              src="/skoolamLogo.png"
-              alt="Image"
-              width={200}
-              height={200}
-            />
+            <img src="/skoolamLogo.png" alt="Image" width={200} height={200} />
           </Link>
         </div>
         <div style={{ alignContent: "center" }}>
@@ -33,10 +21,11 @@ const TopBanner: React.FC = () => {
               style={{
                 background: "#680118",
                 padding: 8,
-                paddingRight: 16,
-                paddingLeft: 16,
+                paddingRight: 24,
+                paddingLeft: 24,
                 color: "#ffffff",
                 borderRadius: "8px",
+                fontSize: "24px",
               }}
             >
               Donate Now

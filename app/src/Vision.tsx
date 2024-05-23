@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const Vision: React.FC = () => {
   const VisionText = () => {
@@ -58,7 +57,7 @@ const Vision: React.FC = () => {
       }}
     >
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Image src="/Vision.png" alt="Image" width={400} height={450} />
+        <img src="/Vision.png" alt="Image" width={400} height={450} />
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <VisionText />

@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Skoolam",
-  description: "Learn to be free"
+  description: "Learn to be free",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{background: "white", color: "black"}}>{children}</body>
+      <body style={{ background: "white", color: "black" }}>{children}</body>
     </html>
   );
 }

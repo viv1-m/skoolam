@@ -1,8 +1,6 @@
-'use client'
+"use client";
 import React from "react";
-import Image from "next/image";
-import { Carousel as ReactCarousel } from 'react-responsive-carousel';
-
+import { Carousel as ReactCarousel } from "react-responsive-carousel";
 
 const Carousel: React.FC = () => {
   return (
@@ -16,7 +14,7 @@ const Carousel: React.FC = () => {
         emulateTouch={true}
       >
         <div>
-          <Image
+          <img
             src="/skoolamCarousel1.png"
             alt="Hero image 1"
             width={600}
@@ -24,7 +22,7 @@ const Carousel: React.FC = () => {
           />
         </div>
         <div>
-          <Image
+          <img
             src="/skoolamCarousel2.png"
             alt="Hero image 2"
             width={600}
@@ -32,7 +30,7 @@ const Carousel: React.FC = () => {
           />
         </div>
         <div>
-          <Image
+          <img
             src="/skoolamCarousel3.png"
             alt="Hero image 3"
             width={600}
